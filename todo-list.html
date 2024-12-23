@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link
+    rel = 'stylesheet'
+    href = "todo-list.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="background-animation" class ='background-animation'>
+      </div>
+
+      <p class="title-paragraph">Todo List</p>
+      <div class="todo-input-grid">
+      
+        <input placeholder="Todo name", class = 'js-name-input name-input'>
+        <select class='task-category js-task-category'>
+          <option value="" disabled selected>Choose category</option>
+          <option value="school">School</option>
+          <option value="work">Work</option>
+          <option value="household">Household</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="date", class = 'js-due-date-input due-date-input'>
+
+        <button
+        class = "add-todo-button js-add-todo-button"
+        >Add</button>
+
+        <div id="add-button-animation" class="add-button-animation">
+        </div>
+    
+      </div>
+
+      <div class="js-sort sort-grid">
+        <label for="sort-criteria" class="sort-label">Sort by:</label>
+        <select id="sort-criteria" class="sort-dropdown">
+          <option value="name">Name</option>
+          <option value="category">Category</option>
+          <option value="dueDate">Due Date</option>
+        </select>
+        <button class="sort-button js-sort-button">Sort</button>
+      </div>
+
+      <div class = 'js-todo-list todo-grid'></div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js">
+      </script>
+
+      <script type = "module" src="todo-list.js">
+      </script>
+    </div>
+    
+  </body>
+</html>

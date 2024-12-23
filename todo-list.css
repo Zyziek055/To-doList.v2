@@ -1,0 +1,134 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(40, 133, 200);
+}
+
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.title-paragraph {
+  text-align: center;
+  margin: 20px;
+  font-size: 50px;
+}
+
+.main-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+
+.todo-grid,
+.todo-input-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+
+}
+
+.sort-grid {
+  display: grid;
+  grid-template-columns: 100px 300px 200px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.sort-dropdown {
+  font-size: 15px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+
+.sort-button {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 6px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.sort-button:hover {
+  background-color: #0056b3;
+}
+
+.sort-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.todo-input-grid {
+  position: relative;
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.name-input, .due-date-input {
+  font-size: 15px;
+  padding: 6px;
+}
+
+.add-todo-button {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.delete-todo-button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+}
+
+.add-button-animation {
+  display: none;
+  position: absolute;
+  right: -150px; 
+  bottom: 0; 
+  width: 100px; 
+  opacity: 1;
+}
+
+.add-button-animation.hidden {
+  transform: translateY(50%);
+  opacity: 0;
+  display: none;
+}
+
+.todo-item {
+  display: grid;
+  grid-template-columns: 200px 150px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  gap: 10px;
+  padding: 10px;
+}
